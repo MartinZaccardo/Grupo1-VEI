@@ -1,0 +1,60 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Barra de navegacion */
+.navbar {
+    background-color: #007bff;
+    padding: 15px 20px;
+}
+
+.navbar .nav-item {
+    margin-left: 20px;
+    /* Espacio entre los elementos de navegación */
+}
+
+.nav-item a {
+    font-size: 1.2rem;
+}
+
+.navbar .nav-item img {
+    width: 40px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.activo {
+    border-bottom: 1px solid #fff;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* Ajustar el comportamiento en pantallas pequeñas */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center; /* Centra los enlaces cuando se desplegan */
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 0;
+    }
+
+    .user-info {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .user-info img {
+        width: 40px;
+        height: 40px;
+    }
+}

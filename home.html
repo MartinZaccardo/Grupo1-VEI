@@ -2,74 +2,98 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="estilos.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <link rel="stylesheet" href="/estilos/navbar.css">
+   <link rel="stylesheet" href="/estilos/home.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand p-4" href="#">Logo</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+
+   <header>
+      <!-- Barra de Navegación -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+         <div class="container-fluid">
+            <!-- Logo a la izquierda -->
+            <div class="logo">
+               <i class="fas fa-regular fa-tooth"></i>
+               <a class="navbar-brand" href="home.html">Consultorio Odontológico</a>
+            </div>
+
+            <!-- Contenedor de enlaces de navegación, con ms-auto para empujar a la derecha -->
+            <div class="collapse navbar-collapse ms-auto justify-content-end" id="navbarNav">
+               <ul class="navbar-nav">
+                  <li class="nav-item">
+                     <a class="nav-link text-white activo" href="home.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-white" href="#">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="perfil.html">
+                        <img src="/imagenes/usuario.svg" alt="Imagen de Usuario">
+                     </a>
+                  </li>
+               </ul>
+            </div>
+
+            <!-- Botón de menú desplegable en pantallas pequeñas -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav" id="navbar">
-                    <a class="nav-item nav-link activo" href="#">Inicio</a>
-                    <a class="nav-item nav-link" href="#">Sobre Nosotros</a>
-                    <a class="nav-item nav-link" href="#">
-                        <img src="usuario.svg" alt="Foto de usuario" class="foto-usuario">
-                    </a>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main class="contenidoCentral">
-        <div class="textoHome">
-            <h1>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore dolores, sint et nostrum ea molestias, temporibus deleniti neque ab voluptatum 
+         </div>
+      </nav>
+   </header>
+
+   <main class="contenidoCentral">
+      <div class="textoHome">
+         <h1>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore dolores, sint et nostrum ea
+            molestias,
+            temporibus deleniti neque ab voluptatum
             necessitatibus aliquid excepturi voluptatibus! Aperiam!
-            </h1>
+         </h1>
 
-            <button class="botonReservar">Reservá tu turno</button>
-        </div>
+         <button class="botonReservar">Reservá tu turno</button>
+      </div>
 
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="imgCarrusel" src="https://pbs.twimg.com/media/Dbp9fvDWsAcmFv8.jpg" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="imgCarrusel" src="https://media.c5n.com/p/4a7dd9887efdd882d05ba8e8950fc57e/adjuntos/326/imagenes/000/079/0000079776/1200x675/smart/iudica-fotojpgjpg.jpg" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="imgCarrusel" src="..." alt="Third slide">
-              </div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+         <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+         </ol>
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <img class="imgCarrusel" src="https://pbs.twimg.com/media/Dbp9fvDWsAcmFv8.jpg" alt="First slide">
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
+            <div class="carousel-item">
+               <img class="imgCarrusel"
+                  src="https://media.c5n.com/p/4a7dd9887efdd882d05ba8e8950fc57e/adjuntos/326/imagenes/000/079/0000079776/1200x675/smart/iudica-fotojpgjpg.jpg"
+                  alt="Second slide">
+            </div>
+            <div class="carousel-item">
+               <img class="imgCarrusel" src="..." alt="Third slide">
+            </div>
+         </div>
+         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+         </a>
+         <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+         </a>
+      </div>
 
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+   </main>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
