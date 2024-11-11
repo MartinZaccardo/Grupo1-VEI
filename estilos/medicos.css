@@ -1,0 +1,14 @@
+.custom-div {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.doctor-img {
+    max-width: 100px; /* Ajusta el tamaño de la imagen del médico */
+    height: auto;
+}
+.calendar-img {
+    max-width: 50px; /* Ajusta el tamaño de la imagen del calendario */
+    height: auto;
+}
