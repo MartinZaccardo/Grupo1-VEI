@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +18,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <link rel="stylesheet" href="/estilos/navbar.css">
         <link rel="stylesheet" href="turnos.css">
+        <link rel="stylesheet" href="turnoConfirmado.css">
     </head>
     
     <body>
@@ -48,42 +57,40 @@
                </div>
             </nav>
          </header>
-        
-        <div class="opcion-container">
-            <div class="opcion">
-                <form action="turnosSegundoPaso.html">
-                    <label for="especialidad">¿Qué especialidad buscaba?</label>
-                    <br>
-                    <select class="form-select" aria-label="Default select example" required name="especialidad" id="especialidad">
-                        <option value="" disabled selected>Seleccione una especialidad</option>
-                        <option>Consulta y diagnostico</option>
-                        <option>Odontologia general</option>
-                        <option>Ortodoncia</option>
-                        <option>Periodoncia</option>
-                        <option>Implantes dentales</option>
-                        <option>Protesis dentales</option>
-                    </select>
-                </div>
-                <div class="opcion">
-                     <label for="medico">¿Con qué médico buscaba?</label>
-                    <select class="form-select" aria-label="Default select example" name="medico" id="medico">
-                        <option selected>Seleccione un médico (opcional)</option>
-                        <option value="Morena Gutierrez">Morena Gutierrez</option>
-                        <option value="Valentin Melito">Valentin Melito</option>
-                        <option value="Carolina Rios">Carolina Rios</option>
-                        <option value="Enrique Castellanos">Enrique Castellanos</option>
-                        <option value="Alberto Rojas">Alberto Rojas</option>
-                        <option value="Ignacio Mendoza">Ignacio Mendoza</option>
-                        <option value="Pablo Soto">Pablo Soto</option>
-                      </select>
-                </div>
-                    <div class="buttons">
-                        <a href="home.html"><button type="button" class="btn btn-secondary btn-lg" id="back-button">Cancelar</button></a>
-                    <button type="submit" class="btn btn-primary btn-lg">Siguiente</button>
-                   
-                    </div>
-                    <script src="turnos.js"></script>
-                </form>
-        </div>
+    <div class="container mt-4">
+        <form action="turnoConfirmado.html" method="post">
+            
+            <div class="mb-3">
+                <label for="especialidad" class="form-label">Especialidad:</label>
+                <input type="text" id="especialidad" name="especialidad" class="form-control" readonly>
+            </div>
+
+            <div class="mb-3">
+                <label for="medico" class="form-label">Médico:</label>
+                <input type="text" id="medico" name="medico" class="form-control" readonly>
+            </div>
+
+            <div class="mb-3">
+                <label for="calendar" class="form-label">Fecha Seleccionada:</label>
+                <input type="text" id="calendar" name="calendar" class="form-control" readonly>
+            </div>
+
+            <div class="mb-3">
+                <label for="options" class="form-label">Horario Seleccionado:</label>
+                <input type="text" id="options" name="options" class="form-control" readonly>
+            </div>
+            <div class="mb-3">
+                <label for="sucursal" class="form-label">Sucursal:</label>
+                <input type="text" id="sucursal" name="sucursal" class="form-control" readonly>
+            </div>
+
+            <div class="buttons">
+                <a href="turnosSegundoPaso.html"><button type="button" class="btn btn-secondary" id="back-button">Volver</button></a>
+                <button type="submit" class="btn btn-primary">Confirmar Turno</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="turnosConfirmacion.js"></script>
 </body>
 </html>
