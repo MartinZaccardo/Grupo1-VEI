@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .contenidoCentral {
     height: 700px;
     width: 1200px;
@@ -10,7 +15,7 @@
     justify-content: space-evenly;
 }
 
-.textoHome {
+.textoHome{
     width: 450px;
 }
 
@@ -21,4 +26,47 @@ h1 {
 
 .imgCarrusel {
     width: 400px;
+}
+
+.seccionDeComentarios{
+    margin: 30px auto;
+    display: flex;
+    gap: 30px;
+    margin: 30px;
+}
+
+.comentarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+}
+.textoComentario{
+    margin: 5px 10px;
+    text-align: center;
+}
+
+.sobreNosotros{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 50px;
+}
+
+.centroOdonto{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 20px;
+    border: 3px solid;
+    height: 300px;
+    width: 1000px;
+    gap: 50px;
+}
+
+
+footer{
+    margin-top: 50px;
+    background-color: #007bff;
+    height: 100px;
 }
