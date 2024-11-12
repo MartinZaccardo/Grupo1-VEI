@@ -31,8 +31,10 @@ document.getElementById('calendar').value = localStorage.getItem('calendar') || 
     document.querySelector('form').addEventListener('submit', function(event) {
         event.preventDefault(); 
         guardarTurno();
+        
         alert('Turno guardado exitosamente');
-        window.location.href = 'turnos_reservados.html';
-    });
+        window.location.href = 'turnoConfirmado.html';
+ 
+        });
    
    
