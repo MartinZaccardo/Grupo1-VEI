@@ -29,8 +29,8 @@ h1 {
 }
 
 .seccionDeComentarios{
-    margin: 30px auto;
     display: flex;
+    justify-content: space-evenly;  
     gap: 30px;
     margin: 30px;
 }
@@ -38,9 +38,22 @@ h1 {
 .comentarios{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     border: 3px solid black;
+    height: 600px;
+    width: 370px
 }
+
+.fotoComentarios{
+    margin-top: 10px;
+    height: 300px;
+    width: 250px;
+    object-fit: cover;
+    border: 3px solid;
+    border-radius: 50%;
+}
+
 .textoComentario{
     margin: 5px 10px;
     text-align: center;
@@ -58,10 +71,10 @@ h1 {
     flex-direction: row-reverse;
     align-items: center;
     padding: 20px;
-    border: 3px solid;
     height: 300px;
     width: 1000px;
     gap: 50px;
+    background-color: #ECEFF1;
 }
 
 
