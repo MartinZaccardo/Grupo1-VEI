@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="turnos.css">
+    </head>
+    
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand p-4" href="home.html">Logo</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav" id="navbar">
+                        <a class="nav-item nav-link" href="home.html">Inicio</a>
+                            <img src="usuario.svg" alt="Foto de usuario" class="foto-usuario">
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <div class="opcion-container">
+            <div class="opcion">
+                <form action="turnosSegundoPaso.html">
+                    <label for="Especialidad">¿Qué especialidad buscaba?</label>
+                    <br>
+                    <select class="form-select" aria-label="Default select example" required name="Especialidad" id="Especialidad">
+                        <option value="" disabled selected>Seleccione una especialidad</option>
+                        <option>Consulta y diagnostico</option>
+                        <option>Odontologia general</option>
+                        <option>Ortodoncia</option>
+                        <option>Periodoncia</option>
+                        <option>Implantes dentales</option>
+                        <option>Protesis dentales</option>
+                    </select>
+                </div>
+                <div class="opcion">
+                     <label for="Especialidad">¿Con qué médico buscaba?</label>
+                    <select class="form-select" aria-label="Default select example" name="Medico" id="Medico">
+                        <option selected>Seleccione un médico (opcional)</option>
+                        <option value="Morena Gutierrez">Morena Gutierrez</option>
+                        <option value="Valentin Melito">Valentin Melito</option>
+                        <option value="Carolina Rios">Carolina Rios</option>
+                        <option value="Enrique Castellanos">Enrique Castellanos</option>
+                        <option value="Alberto Rojas">Alberto Rojas</option>
+                        <option value="Ignacio Mendoza">Ignacio Mendoza</option>
+                        <option value="Pablo Soto">Pablo Soto</option>
+                      </select>
+                </div>
+                    <div class="buttons">
+                        <a href="home.html"><button type="button" class="btn btn-secondary btn-lg">Cancelar</button></a>
+                    <button type="submit" class="btn btn-primary btn-lg">Siguiente</button>
+                   
+                    </div>
+                    
+                </form>
+        </div>
+</body>
+</html>
