@@ -21,7 +21,12 @@
 
 h1 {
     font-size: 25px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+}
+
+.botonReservar{
+    height: 100px;
+    width: 300px;
 }
 
 .imgCarrusel {
@@ -77,6 +82,11 @@ h1 {
     background-color: #ECEFF1;
 }
 
+.imgCentro{
+    height: 240px;
+    padding: 3px;
+    border: 3px solid #5799e0;
+}
 
 footer{
     margin-top: 50px;
