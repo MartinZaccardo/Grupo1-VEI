@@ -96,6 +96,13 @@ h1 {
     background-color: #ECEFF1;
 }
 
+.imgCentro{
+    height: 250px;
+    width: 300px;
+    padding: 5px;
+    border: 3px solid #3689e1;
+}
+
 /* Media query para pantallas de tamaño menor o igual a 991px */
 @media (max-width: 991px) {
     .centroOdonto {
