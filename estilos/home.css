@@ -174,3 +174,9 @@ footer {
     top: 50%;
     z-index: 0;
 }
+
+.datosFooter{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

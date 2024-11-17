@@ -1,0 +1,137 @@
+body {
+    background-color: rgb(252, 253, 253);
+    background-color: #F5F5F5;
+}
+
+.opcion-container {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ECEFF1;
+    border-radius: 0.5em;
+    margin-top: 1.5em;
+    margin-left: 5em;
+    margin-right: 5em;
+    padding-bottom: 10px;
+    height: 10em;
+
+
+}
+
+.form-select {
+    width: 18em;
+    font-size: 30px;
+    background-color: #007bff;
+    color: white;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+.form-select:hover {
+    transition: all 0.5s;
+    border: 1.5px solid #000000;
+    cursor: pointer;
+
+}
+
+select:invalid {
+    color: #dfdfdfad;
+}
+
+.buttons {
+    margin-top: 1em;
+    gap: 1em;
+    display: flex;
+    justify-content: space-around;
+}
+
+#back-button,
+.btn-primary {
+    font-size: 40px;
+    font-weight: 700;
+    border: none;
+    transition: all 0.5s;
+}
+
+#back-button {
+    color: #ffff;
+    background-color: #6c757d;
+}
+
+#back-button:hover {
+    background-color: #ee5454;
+
+    transition: all 0.5s;
+}
+
+.btn-primary {
+    transition: all 0.5s;
+    background-color: #007bff;
+
+}
+
+.btn-primary:hover {
+    transition: all 0.5s;
+    background-color: #4aa0fc;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar-section,
+.time-selection,
+.center-selection {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+input[type="date"],
+input[type="time"],
+select {
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.calendar-section {
+    margin-top: 1em;
+}
+
+.hora-opcion {
+    margin-top: 1em;
+}
+
+.btn-secondary {
+    font-size: large;
+    color: #000000;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+.btn-secondary:hover {
+    font-size: large;
+    color: #000000;
+    background-color: rgb(240, 0, 0);
+}
+
+.btn-check:active+.btn-secondary,
+.btn-check:checked+.btn-secondary,
+.btn-secondary.active,
+.btn-secondary:active,
+.show>.btn-secondary.dropdown-toggle {
+    background-color: #007bff;
+}
