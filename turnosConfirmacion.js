@@ -1,4 +1,8 @@
 
+var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+var toastList = toastElList.map(function (toastEl) {
+  return new bootstrap.Toast(toastEl, option)
+})
 document.getElementById('especialidad').value = localStorage.getItem('especialidad') || 'No seleccionado';
  // para verificar si el usuario seleccionó un médico o no
  const medicoSeleccionado = localStorage.getItem('medico');
@@ -32,9 +36,8 @@ document.getElementById('calendar').value = localStorage.getItem('calendar') || 
         event.preventDefault(); 
         guardarTurno();
         
-        alert('Turno guardado exitosamente');
-        window.location.href = 'turnoConfirmado.html';
- 
+        
+        toast.show();
         });
    
    
