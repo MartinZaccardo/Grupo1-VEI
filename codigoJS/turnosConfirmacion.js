@@ -1,8 +1,5 @@
 
-var toastElList = [].slice.call(document.querySelectorAll('.toast'))
-var toastList = toastElList.map(function (toastEl) {
-  return new bootstrap.Toast(toastEl, option)
-})
+
 document.getElementById('especialidad').value = localStorage.getItem('especialidad') || 'No seleccionado';
  // para verificar si el usuario seleccionó un médico o no
  const medicoSeleccionado = localStorage.getItem('medico');
@@ -28,16 +25,16 @@ document.getElementById('calendar').value = localStorage.getItem('calendar') || 
         };
 
         const turnos = JSON.parse(localStorage.getItem('turnos')) || [];
-        turnos.push(turno); // Agregar el nuevo turno al array
+        turnos.push(turno); // Agrega el nuevo turno al array
         localStorage.setItem('turnos', JSON.stringify(turnos)); 
     }
 
     document.querySelector('form').addEventListener('submit', function(event) {
         event.preventDefault(); 
         guardarTurno();
-        
-        
-        toast.show();
         });
    
-   
+        document.getElementById('confirmarTurno').addEventListener('click', function () {
+            localStorage.setItem('notificacion', 'Turno reservado con éxito!');
+            window.location.href = '../home.html'; // Redirige a la página destino
+        });
