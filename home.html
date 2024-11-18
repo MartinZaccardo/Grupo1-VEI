@@ -15,7 +15,10 @@
 
    <header>
       <!-- Barra de Navegación -->
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="    position: fixed;
+      width: 100%;
+      z-index: 10;
+      top: 0px;">
          <div class="container-fluid">
             <!-- Logo a la izquierda -->
             <div class="logo">
@@ -30,7 +33,7 @@
                      <a class="nav-link text-white activo" href="home.html">Inicio</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link text-white" href="#sobreNosotros">Sobre Nosotros</a>
+                     <a class="nav-link text-white" href="#sobreNosotross">Sobre Nosotros</a>
                   </li>
                   <li class="nav-item">
                      <a href="hojasHTML/perfil.html">
@@ -51,12 +54,8 @@
 
    <main class="contenidoCentral">
       <div class="textoHome">
-         <h1>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore dolores, sint et nostrum ea
-            molestias,
-            temporibus deleniti neque ab voluptatum
-            necessitatibus aliquid excepturi voluptatibus! Aperiam!
-         </h1>
+         <h1>Facil, rapido y sencillo.</h1>
+         <h1>Cuidate donde se atienden los famosos.</h1>
 
         <a href="hojasHTML/turnos.html"><button class="botonReservar">Reservá tu turno</button></a> 
       </div>
@@ -86,7 +85,50 @@
 
          <div class="comentarios">
             <img src="imagenes/persona1.jpg" alt="fotoUsuario" class="fotoComentarios">
-            <span>nombre usuario</span>
+
+            <div class="subComentario">
+               <h3>nombre usuario</h3>
+               <p class="textoComentario">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Libero corrupti obcaecati ipsa aspernatur pariatur mollitia rerum. 
+                  Veritatis nemo saepe animi dolorem vero minima? Officiis sit omnis reprehenderit assumenda ipsam ducimus?
+               </p>
+               <div class="ordenEstrellas">
+                  <img src="imagenes/star-48-dorada.png" alt="estrellaCalificacion" class="estrellas">
+                  <img src="imagenes/star-48-dorada.png" alt="estrellaCalificacion" class="estrellas">
+                  <img src="imagenes/star-48-dorada.png" alt="estrellaCalificacion" class="estrellas">
+                  <img src="imagenes/star-48-dorada.png" alt="estrellaCalificacion" class="estrellas">
+                  <img src="imagenes/star-4-48.png" alt="estrellaCalificacion" class="estrellas">
+               </div>
+            </div>
+            
+         </div>
+         
+         <div class="comentarios">
+            <img src="imagenes/persona2.jpg" alt="fotoUsuario" class="fotoComentarios">
+            
+            <div class="subComentario">
+               <h3>nombre usuario</h3>
+               <p class="textoComentario">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Libero corrupti obcaecati ipsa aspernatur pariatur mollitia rerum. 
+                  Veritatis nemo saepe animi dolorem vero minima? Officiis sit omnis reprehenderit assumenda ipsam ducimus?
+               </p>
+               <div class="ordenEstrellas">
+                  <img src="imagenes/star-48-dorada.png" alt="estrellaCalificacion" class="estrellas">
+                  <img src="imagenes/star-48-dorada.png" alt="estrellaCalificacion" class="estrellas">
+                  <img src="imagenes/star-48-dorada.png" alt="estrellaCalificacion" class="estrellas">
+                  <img src="imagenes/star-48-dorada.png" alt="estrellaCalificacion" class="estrellas">
+                  <img src="imagenes/star-4-48.png" alt="estrellaCalificacion" class="estrellas">
+               </div>
+            </div>
+      </div>
+
+      <div class="comentarios">
+         <img src="imagenes/persona3.webp" alt="fotoUsuario" class="fotoComentarios">
+
+         <div class="subComentario">
+            <h3>nombre usuario</h3>
             <p class="textoComentario">
                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                Libero corrupti obcaecati ipsa aspernatur pariatur mollitia rerum. 
@@ -100,44 +142,13 @@
                <img src="imagenes/star-4-48.png" alt="estrellaCalificacion" class="estrellas">
             </div>
          </div>
-         
-         <div class="comentarios">
-            <img src="imagenes/persona2.jpg" alt="fotoUsuario" class="fotoComentarios">
-            <span>nombre usuario</span>
-            <p class="textoComentario">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-               Libero corrupti obcaecati ipsa aspernatur pariatur mollitia rerum. 
-               Veritatis nemo saepe animi dolorem vero minima? Officiis sit omnis reprehenderit assumenda ipsam ducimus?
-            </p>
-            <div class="ordenEstrellas">
-               <img src="imagenes/star-48-dorada.png" alt="estrellaCalificacion" class="estrellas">
-               <img src="imagenes/star-48-dorada.png" alt="estrellaCalificacion" class="estrellas">
-               <img src="imagenes/star-48-dorada.png" alt="estrellaCalificacion" class="estrellas">
-               <img src="imagenes/star-48-dorada.png" alt="estrellaCalificacion" class="estrellas">
-               <img src="imagenes/star-48-dorada.png" alt="estrellaCalificacion" class="estrellas">
-            </div>
-      </div>
-
-      <div class="comentarios">
-         <img src="imagenes/persona3.webp" alt="fotoUsuario" class="fotoComentarios">
-         <span>nombre usuario</span>
-         <p class="textoComentario">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Libero corrupti obcaecati ipsa aspernatur pariatur mollitia rerum. 
-            Veritatis nemo saepe animi dolorem vero minima? Officiis sit omnis reprehenderit assumenda ipsam ducimus?
-         </p>
-         <div class="ordenEstrellas">
-            <img src="imagenes/star-48-dorada.png" alt="estrellaCalificacion" class="estrellas">
-            <img src="imagenes/star-48-dorada.png" alt="estrellaCalificacion" class="estrellas">
-            <img src="imagenes/star-48-dorada.png" alt="estrellaCalificacion" class="estrellas">
-            <img src="imagenes/star-48-dorada.png" alt="estrellaCalificacion" class="estrellas">
-            <img src="imagenes/star-4-48.png" alt="estrellaCalificacion" class="estrellas">
-         </div>
    </div>
 
   </section>
 
-  <section class="sobreNosotros" id="sobreNosotros">
+  <a name="sobreNosotross"></a>
+
+  <section class="sobreNosotros" >
 
       <div class="tituloSN">
          <div class="linea"></div>
@@ -149,13 +160,13 @@
          <img src="imagenes/centroOdontologico.jpg" alt="fotoDelCentroOdontologico" class="imgCentro">
 
          <div>
-            <span>Sede Belgrano</span>
-            <p>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-               Molestiae dignissimos laboriosam doloremque neque hic tenetur, facere debitis itaque, 
-               illum deserunt impedit vitae,excepturi temporibus saepe nemo. Molestias ipsam nam ratione.
+            <span style="display: block; text-decoration: underline;">Sede Belgrano</span>
+            
+            <p style="margin: 0;">
+               Nuestra Sede Central. 500 m² con 8 consultorios, radiología y topógrafo digital, laboratorio de Cad Cam y quirófano.
             </p>
-            <span>11 44351289</span> 
+            <span style="display: block;">Belgrano 1134, CABA</span>
+            <span style="display: block;">11 4435-1289</span>
          </div>
       </div>
 
@@ -163,15 +174,28 @@
          <img src="imagenes/centroOdontologico2.jpg" alt="fotoDelCentroOdontologico" class="imgCentro">         
 
          <div>
-            <span>Sede Palermo</span>
-            <p>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-               Molestiae dignissimos laboriosam doloremque neque hic tenetur, facere debitis itaque, 
-               illum deserunt impedit vitae,excepturi temporibus saepe nemo. Molestias ipsam nam ratione.
+            <span style="display: block; text-decoration: underline;">Sede Palermo</span>
+            <p style="margin: 0;">
+               Moderna sede con 8 consultorios, radiología digital, Tecnología Cad Cam y quirófano en el corazón de la Ciudad de Buenos Aires.
             </p>
-            <span>11 2321321321</span> 
+            <span style="display: block;">Belgrano 1134, CABA</span>
+            <span style="display: block;">11 2366-8122</span> 
          </div>
       </div>
+
+      <div class="centroOdonto">
+         <img src="imagenes/centroOdontologico.jpg" alt="fotoDelCentroOdontologico" class="imgCentro">
+
+         <div>
+            <span style="display: block; text-decoration: underline;">Sede Villa Crespo</span>
+            <p style="margin: 0;">
+               Excelente sede, con 6 consultorios, radiología panorámica, Tecnología Cad Cam y quirófano.
+            </p>
+            <span style="display: block;">Belgrano 1134, CABA</span>
+            <span style="display: block;">11 4591-1089</span> 
+         </div>
+      </div>
+      
 
   </section>
 
@@ -183,13 +207,13 @@
    
       <div class="datosFooter">
          <img src="imagenes/building-32.png" alt="edificio" class="iconosRedes">
-         <section class="textoFooter">Sede central: Talcahuano 1134, CABA</section>
+         <section class="textoFooter">Sede central: Belgrano 1134, CABA</section>
       </div>
      
 
       <div class="datosFooter">
          <img src="imagenes/phone-2-32.png" alt="telefono" class="iconosRedes">
-         <section class="textoFooter"><img src="" alt="">Teléfono: 11 2321321321</section>
+         <section class="textoFooter"><img src="" alt="">Teléfono: 11 4435-1289</section>
       </div>
       
 
