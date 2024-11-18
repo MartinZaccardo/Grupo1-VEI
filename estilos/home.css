@@ -1,72 +1,248 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
+body{
+    box-sizing: border-box;
+}
+
 .contenidoCentral {
+    max-width: 80%;
     height: 700px;
-    width: 1200px;
+    width: 100%;
     margin: 40px auto;
     padding: 10px;
-    border: 3px black solid;
+    border: 2px solid black;
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
     justify-content: space-evenly;
+    box-sizing: border-box;
 }
 
-.textoHome{
-    width: 450px;
+.textoHome {
+    width: 100%;
+    max-width: max-content;
 }
 
 h1 {
     font-size: 25px;
-    margin-bottom: 100px;
+    margin-bottom: 30px; /* Ajuste para que sea más adaptativo */
 }
+
+.botonReservar{
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    height: 70px;
+    width: 250px;
+    font-size: 18px;
+
+}
+
+.botonReservar:hover{
+    
+}
+
 
 .imgCarrusel {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
 }
 
-.seccionDeComentarios{
-    margin: 30px auto;
+/* Media query para ajustar en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .contenidoCentral {
+        flex-direction: column;
+        align-items: center;
+    }
+    .textoHome {
+        text-align: center;
+    }
+}
+
+/* Ajustes en la sección de comentarios para mejor responsividad */
+.seccionDeComentarios {
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
     margin: 30px;
 }
 
-.comentarios{
+.comentarios {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    border-radius:0px 100px;
+    height: fit-content;
+    gap: 25px;
+    padding: 10px 25px;
+}
+
+.subComentario{
+    display: flex;
+    flex-direction: column;
+}
+
+.fotoComentarios {
+    margin-top: 10px;
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+    border: 2px solid;
+    border-radius: 50%;
+}
+
+.textoComentario {
+    width: 300px;
+    margin: 0px;
+}
+
+.sobreNosotros {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 3px solid black;
-}
-.textoComentario{
-    margin: 5px 10px;
-    text-align: center;
+    gap: 30px;
 }
 
-.sobreNosotros{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     gap: 50px;
-}
-
-.centroOdonto{
+.centroOdonto {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     padding: 20px;
-    border: 3px solid;
     height: 300px;
-    width: 1000px;
+    width: 90%;
+    max-width: 1000px;
     gap: 50px;
+    background-color: #ECEFF1;
 }
 
+.imgCentro{
+    height: 250px;
+    width: 300px;
+    padding: 5px;
+    border: 3px solid #3689e1;
+}
 
-footer{
-    margin-top: 50px;
+/* Media query para pantallas de tamaño menor o igual a 991px */
+@media (max-width: 991px) {
+    .centroOdonto {
+        flex-direction: column !important;
+        align-items: center;
+        text-align: center;
+    }
+
+    .centroOdonto img {
+        margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+        max-width: 80%; /* Ajuste opcional para que la imagen no sea demasiado grande */
+        height: auto;
+    }
+}
+
+footer {
+    margin-top: 30px;
     background-color: #007bff;
     height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
+
+.textoFooter{
+    color: #fff;
+    font-size: 18px;
+}
+
+.iconosRedes{
+    height: 24px;
+    width: 24px;
+}
+
+.redes{
+    display: flex;
+    gap: 10px;
+}
+
+.tituloSN{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.SN{
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+    z-index: 1; 
+    background-color: white;
+    
+}
+
+.linea{
+    border: none; 
+    border-top: 2px solid black;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    z-index: 0;
+}
+
+.datosFooter{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.collageFotos{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.collage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto;   
+    width: 100%;                          /* Ajusta según el contenedor */
+    padding: 10px 100px;
+  }
+
+  .contenedorImagenCollage{
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .collageImg {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: 0.3s ease-in-out;
+  }
+
+  .contenedorImagenCollage:nth-child(5) {
+    grid-column: span 2;                  /* Hace que la última foto ocupe ambas columnas */
+  }
+
+  .mensajeOculto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;                           /* Invisible por defecto */
+    transition: 0.3s ease-in-out;         /* Suaviza la transición */
+  }
+
+  .mensajeOculto:hover{
+    opacity: 1;
+  }
+  .collageImg:hover{
+    filter: brightness(50%);
+  }
