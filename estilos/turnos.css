@@ -3,7 +3,7 @@ body {
     background-color: #F5F5F5;
 }
 
-.opcion-container {
+.opcion-container{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
     display: flex;
@@ -21,8 +21,13 @@ body {
 
 }
 
+.inputCalendar{
+    height: 59px;
+    font-size: 30px;
+}
+
 .form-select {
-    width: 18em;
+    width: 600px;
     font-size: 30px;
     background-color: #007bff;
     color: white;
@@ -84,17 +89,27 @@ select:invalid {
     align-items: center;
 }
 
+.contenedor{
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: row;   
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
 .calendar-section,
 .time-selection,
 .center-selection {
     display: flex;
     flex-direction: column;
     width: 30%;
-    margin-bottom: 20px;
 }
 
 label {
-    margin-bottom: 10px;
     font-size: 18px;
 }
 
@@ -106,12 +121,13 @@ select {
     width: 100%;
 }
 
-.calendar-section {
-    margin-top: 1em;
-}
+
 
 .hora-opcion {
-    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 5px;
 }
 
 .btn-secondary {
