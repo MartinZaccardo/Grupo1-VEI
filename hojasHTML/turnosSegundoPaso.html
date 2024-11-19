@@ -56,26 +56,25 @@
     <form action="turnosPasoConfirmacion.html">
 
         <div class="opcion-container">
-            <div class="contenedor">
+            <div class="container">
                 <div class="calendar-section">
                     <label for="calendar" style="margin-bottom: 13px;">Calendario</label>
                     <input type="date" id="calendar" required min="" class="inputCalendar">
+                    <div class="hora-opcion">
+                        <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked >
+                        <label class="btn btn-secondary" for="option1">11:20</label>
+        
+                        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                        <label class="btn btn-secondary" for="option2">15:40</label>
+        
+                        <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" disabled>
+                        <label class="btn btn-secondary" for="option3">16:30</label>
+        
+                        <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                        <label class="btn btn-secondary" for="option4">18:00</label>
+                       </div>
                 </div>
 
-               <div class="hora-opcion">
-                <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked >
-                <label class="btn btn-secondary" for="option1">11:20</label>
-
-                <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                <label class="btn btn-secondary" for="option2">15:40</label>
-
-                <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" disabled>
-                <label class="btn btn-secondary" for="option3">16:30</label>
-
-                <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
-                <label class="btn btn-secondary" for="option4">18:00</label>
-               </div>
-               
                 <div class="opcion">
 
                     <label for="sucursal">¿En qué sucursal?</label>
@@ -90,8 +89,6 @@
                 </div>
 
             </div>
-
-
             <div class="buttons">
                 <a href="turnos.html"><button type="button" id="back-button" class="btn btn-secondary btn-lg">Volver</button></a>
                 <button type="submit" class="btn btn-primary btn-lg">Siguiente</button>
