@@ -62,7 +62,6 @@ select:invalid {
 
 #back-button:hover {
     background-color: #ee5454;
-
     transition: all 0.5s;
 }
 
@@ -132,4 +131,10 @@ select {
 .btn-secondary:active,
 .show>.btn-secondary.dropdown-toggle {
     background-color: #007bff;
+}
+
+.btn-primary,#back-button {
+    height: 80px;
+    width: 200px;
+    font-size: 24px;
 }
