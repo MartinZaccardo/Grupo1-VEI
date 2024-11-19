@@ -12,22 +12,30 @@ body{
     height: 700px;
     margin: 40px auto;
     padding: 10px;
-    border: 2px solid black;
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
+    flex-direction: row-reverse;
     justify-content: space-evenly;
     box-sizing: border-box;
+    background-color: #ECEFF1;
+    border-radius: 30px;
 }
 
 .textoHome {
-    width: 100%;
-    max-width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.speach{
+    margin-bottom: 20px;
 }
 
 h1 {
-    font-size: 25px;
-    margin-bottom: 30px; /* Ajuste para que sea más adaptativo */
+    text-align: center;
+    font-size: 30px;
+    margin: 0px;
 }
 
 .botonReservar{
@@ -39,7 +47,6 @@ h1 {
     font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-
 }
 
 .botonReservar:hover{
@@ -75,8 +82,8 @@ h1 {
 .comentarios {
     display: flex;
     flex-direction: row;
-    border: 2px solid black;
     border-radius:0px 100px;
+    background-color: #ECEFF1;
     gap: 25px;
     padding: 10px 25px;
 }
@@ -92,7 +99,6 @@ h1 {
     height: 130px;
     width: 130px;
     object-fit: cover;
-    border: 2px solid;
     border-radius: 50%;
 }
 
